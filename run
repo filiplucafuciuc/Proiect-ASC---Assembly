@@ -3,14 +3,6 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-DOCKER_CONFIG_JSON='{
-  "auths": {},
-  "currentContext": "colima",
-  "cliPluginsExtraDirs": [
-    "/opt/homebrew/lib/docker/cli-plugins"
-  ]
-}'
-
 init() {
     echo -e "${GREEN}Checking${NC} if Homebrew is installed..."
 
@@ -56,7 +48,7 @@ init() {
         limactl start x86_machine.yaml --vm-type=qemu --arch=x86_64 --tty=false
         limactl shell x86_machine sudo apt update
         limactl shell x86_machine sudo apt upgrade -y
-        limactl shell x86_machine sudo apt install -y gcc g++-multilib
+        limactl shell x86_machine sudo apt install -y gcc g++-multilib gdb
     fi
 }
 
@@ -82,7 +74,7 @@ if [ -z "$IS_LIMA" ]; then
             limactl start x86_machine.yaml --vm-type=qemu --arch=x86_64 --tty=false
             limactl shell x86_machine sudo apt update
             limactl shell x86_machine sudo apt upgrade -y
-            limactl shell x86_machine sudo apt install -y gcc g++-multilib
+            limactl shell x86_machine sudo apt install -y gcc g++-multilib gdb
         fi
 
         echo -e "Connecting to ${GREEN}lima x86_machine${NC}.\nRemember to run ${RED}exit${NC} or ${RED}Ctrl+D${NC} to exit the shell.\nMake sure to rerun ./run if you want to compile a new file."

@@ -35,7 +35,7 @@ images:
     arch: "aarch64"
 # CPUs
 # 🟢 Builtin default: min(4, host CPU cores)
-cpus: 1
+cpus: 2
 # Memory size
 # 🟢 Builtin default: min("4GiB", half of host memory)
 memory: "2GiB"
