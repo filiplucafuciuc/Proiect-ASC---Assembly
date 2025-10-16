@@ -1,3 +1,52 @@
+# Tema – Gestionarea unui dispozitiv de stocare într-un sistem de operare minimal
+
+Proiectul presupune că faci parte din echipa de dezvoltare a unui **sistem de operare minimal**, responsabilă de implementarea unei componente esențiale: **modulul de gestiune al dispozitivului de stocare** *(hard-disk sau SSD)*. Acest modul are rolul de a administra modul în care datele sunt **plasate**, **localizate** și **reorganizate** în memoria persistentă, asigurând un acces eficient și controlat la resursele de stocare ale sistemului.
+
+---
+
+## Moduri de funcționare
+
+În cadrul acestei implementări sunt avute în vedere **două moduri de funcționare distincte**:
+
+### • Sistem cu memorie unidimensională (liniară)
+O abordare secvențială, în care blocurile de memorie sunt dispuse pe o singură axă logică, iar fișierele sunt stocate în **segmente contigue**.
+
+### • Sistem cu memorie bidimensională (matrice)
+O extensie a modelului unidimensional, unde spațiul de stocare este organizat sub formă de **matrice**, permițând o gestionare mai complexă a datelor și **optimizări în alocare și defragmentare**.
+
+---
+
+## Unitatea de măsură și structura memoriei
+
+În ambele cazuri, unitățile de măsură utilizate respectă convențiile standard ale sistemelor de operare:
+
+- **1 MB = 1024 KB**
+- **1 KB = 1024 B**
+
+Spațiul de stocare este împărțit în **blocuri de dimensiuni fixe**, care constituie unitatea de bază pentru toate operațiile de gestionare a fișierelor.
+
+---
+
+## Operații fundamentale
+
+Modulul trebuie să poată efectua **operații fundamentale asupra sistemului de fișiere**, precum:
+
+- **adăugarea de fișiere**, prin identificarea primului spațiu disponibil în memorie conform regulilor de alocare;
+- **interogarea locației** unui fișier existent, pe baza unui identificator unic (*descriptor*);
+- **ștergerea fișierelor** și eliberarea blocurilor de memorie ocupate;
+- **defragmentarea dispozitivului**, pentru rearanjarea datelor și consolidarea spațiului liber.
+
+---
+
+## Scopul temei
+
+Prin această temă se urmărește **simularea logicii interne a unui subsistem de stocare**, accentuând conceptele de:
+
+- **alocare contiguă**,
+- **fragmentare**,
+- **optimizare a spațiului**,
+
+în contextul arhitecturii unui **sistem de operare minimal**.
 
 # Assembly Runner
 
