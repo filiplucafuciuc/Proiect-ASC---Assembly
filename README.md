@@ -2,6 +2,8 @@
 
 Proiectul presupune că faci parte din echipa de dezvoltare a unui **sistem de operare minimal**, responsabilă de implementarea unei componente esențiale: **modulul de gestiune al dispozitivului de stocare** *(hard-disk sau SSD)*. Acest modul are rolul de a administra modul în care datele sunt **plasate**, **localizate** și **reorganizate** în memoria persistentă, asigurând un acces eficient și controlat la resursele de stocare ale sistemului.
 
+https://cs.unibuc.ro/~crusu/asc/Arhitectura%20Sistemelor%20de%20Calcul%20(ASC)%20-%20Tema%20Laborator%202024.pdf
+
 ---
 
 ## Moduri de funcționare
