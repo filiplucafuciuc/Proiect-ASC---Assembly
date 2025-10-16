@@ -1,3 +1,4 @@
+
 # Assembly Runner
 
 A seamless assembly runner that simplifies running `.s` and `.asm` x86 assembly files within a Docker container. With this tool, you can quickly execute x86 assembly code without needing to manually handle dependencies or setups.
@@ -67,9 +68,6 @@ If you have multiple `.s` and `.asm` files in your directory, you can let the sc
 ./run
 ```
 
-## Contributors
-
-- **Radu Buzas** - Initial work
 
 ## License
 
